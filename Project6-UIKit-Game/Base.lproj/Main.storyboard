@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h4O-Wu-9db">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h4O-Wu-9db">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,27 +10,36 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2_UIKit_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project6_UIKit_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY1-mf-28N">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="56" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xY1-mf-28N" secondAttribute="height" multiplier="2:1" id="TrD-74-H3U"/>
+                                </constraints>
                                 <state key="normal" image="spain"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dY0-wa-vNF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HM-Ol-3Ff">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="186" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7HM-Ol-3Ff" secondAttribute="height" multiplier="2:1" id="EKd-JJ-0J1"/>
+                                </constraints>
                                 <state key="normal" image="spain"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfd-0l-PBk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYi-XU-crN">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="316" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dYi-XU-crN" secondAttribute="height" multiplier="2:1" id="eoc-CD-XNn"/>
+                                </constraints>
                                 <state key="normal" image="spain"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBJ-SU-tId"/>
@@ -40,11 +49,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="7HM-Ol-3Ff" firstAttribute="top" secondItem="xY1-mf-28N" secondAttribute="bottom" constant="30" id="5oA-0e-Cxo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dYi-XU-crN" secondAttribute="bottom" constant="20" id="BTJ-vA-6bZ"/>
+                            <constraint firstItem="7HM-Ol-3Ff" firstAttribute="height" secondItem="dYi-XU-crN" secondAttribute="height" id="Cnd-zY-rUo"/>
                             <constraint firstItem="xY1-mf-28N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hi6-WJ-j0S"/>
                             <constraint firstItem="7HM-Ol-3Ff" firstAttribute="centerX" secondItem="xY1-mf-28N" secondAttribute="centerX" id="VUc-mE-mKg"/>
                             <constraint firstItem="xY1-mf-28N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="hGX-SV-Ida"/>
                             <constraint firstItem="dYi-XU-crN" firstAttribute="top" secondItem="7HM-Ol-3Ff" secondAttribute="bottom" constant="30" id="kDw-Ot-xMb"/>
                             <constraint firstItem="dYi-XU-crN" firstAttribute="centerX" secondItem="7HM-Ol-3Ff" secondAttribute="centerX" id="sTa-tp-h9s"/>
+                            <constraint firstItem="7HM-Ol-3Ff" firstAttribute="height" secondItem="xY1-mf-28N" secondAttribute="height" id="yPU-wp-ME4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,7 +77,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h4O-Wu-9db" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mEZ-86-axP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
